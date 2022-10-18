@@ -1,0 +1,85 @@
+.home{
+    // padding: 8rem 0;
+    background: #EFF6F2;
+    // height: 70vh;
+    // overflow: hidden;
+    // position: relative;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // border: 1px solid red;
+        // position: relative;
+        // bottom: 0;
+    }
+
+    .content-sec{
+        // border: 1px solid blue;
+        width: 50%;
+        h1{
+            max-width: 600px;
+            margin-bottom: 1em;
+        }
+        p {
+            max-width: 676px;
+            line-height: 3rem;
+        }
+       
+
+        form{
+            padding: 7em 0;
+            .input-group {
+                background-color:  #fff;
+                border-radius: 10px;
+                padding: .5em 0;
+                display: flex;
+                width: 70%;
+                justify-content: space-between;
+                // border: 1px solid red;
+                // width: 100%;
+
+                input {
+                    border: none;
+                    outline: none;
+                    width: 78.7%;
+                    max-width: 530px;
+                    padding: .95em 0em .95em 3em ;
+                }
+                 button{
+                    outline: none;
+                    border: none;
+                    color: #fff;
+                    background-color:#338573;
+                    font-size: 2.4rem;
+                    padding: .55em 1em;
+                    border-radius: 10px;
+                    max-width: 200px;
+
+                    
+                 }
+                 ::placeholder {
+                    color: #AEB0B4;
+                    font-weight: 700;
+                    font-size: 1.8rem;
+                 }
+            }
+        }
+    }
+    .hero-img{
+        width:50% ;
+        max-width: 550px;
+        // border: 1px solid yellow;
+        // position: relative;
+
+        img{
+            // background-position: bottom;
+            position: relative;
+            bottom: 0;
+            background-size: contain;
+            // border: 1px solid magenta;
+        }
+    }
+
+    
+}
