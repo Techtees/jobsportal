@@ -13,8 +13,6 @@ const categories= [
     {name:"Technology"},
     {name:"Technology"},
     {name:"Technology"},
-    {name:"Technology"},
-    {name:"Technology"},
 ]
 function Categories() {
     return(
