@@ -1,6 +1,6 @@
-function Button ({text, type, btnStyle}) {
+function Button ({text, type, className}) {
     return (
-        <button type={type} className={btnStyle}  >
+        <button type={type} className={className}>
             {text}
         </button>
     )
