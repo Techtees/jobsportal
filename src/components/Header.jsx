@@ -7,8 +7,8 @@ function Header() {
         <header className="container">
             <span className="logo">Jobs Portal</span>
             <div className="menu-right">
-                <Button  type='button' btnStyle='btn-w-b' text='Login' />
-                <Button  type='button' btnStyle='btn-primary' text='Post a job' />
+                <Button  type='button' className='btn-w-b' text='Login' />
+                <Button  type='button' className='btn-primary' text='Post a job' />
             </div>
         </header>
     )
