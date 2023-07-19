@@ -1,0 +1,45 @@
+
+import './styles/job-list.scss'
+import Button from '../shared/Button';
+import {JobList} from '../backend/data';
+
+function Joblist() {
+    return(
+        <div className="job-lists">
+            <div className="container">
+                <div className="title">
+                    <h2>All Popular Listed jobs</h2>
+                </div>
+                <div className='job-list'>
+                    { JobList.map((item, index)=> (
+                            <div className='job-list-items' key={index}>
+                                <div className='job-details'>
+                                    <div class="res-circle">
+                                        <div class="circle-txt">J</div>
+                                    </div>
+                                    <div className='details'>
+                                        <span>Match company limited</span>
+                                    <h3>{item.name}</h3>
+                                        <div className='other-info'>
+                                            <span><i></i> {item.location}</span>
+                                            <span>{item.type}</span>
+                                            <span>{item.salary}</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className='job-btn'>
+                                <Button className='btn-primary' type='button' text='View Details' />
+                                </div>
+                            </div>
+                        ))
+                    }
+                </div>
+                <div className='view-more-btn'>
+                    <Button className="btn-primary"  type="button" text="view More" />
+                </div>
+            </div>
+        </div>
+    )
+}
+
+export default Joblist;
