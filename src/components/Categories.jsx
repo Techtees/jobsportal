@@ -1,19 +1,8 @@
 import './styles/categories.scss'
 import Icon from '../images/icon.svg'
 import {FaBox} from 'react-icons/fa'
+import {categories} from '../backend/data';
 
-const categories= [
-    {name:"Technology"},
-    {name:"Technology"},
-    {name:"Technology"},
-    {name:"Technology"},
-    {name:"Technology"},
-    {name:"Technology"},
-    {name:"Technology"},
-    {name:"Technology"},
-    {name:"Technology"},
-    {name:"Technology"},
-]
 function Categories() {
     return(
         <div className="categories">
