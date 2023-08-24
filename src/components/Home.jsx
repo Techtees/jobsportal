@@ -7,7 +7,7 @@ function Home() {
         <div className="home">
             <div className="container">
                 <div className='content-sec'>
-                    <h1>Find a <span>job</span> that <span>matches</span> your passion</h1>
+                    <h1>Find A <span>Job</span> That <span>Matches</span> Your Passion</h1>
                     <p>Hand-picked opportunities to work from home, remotely, freelance, full-time, part-time, contract and internships.</p>
                     <form action="">
                         <div className='input-group'>
