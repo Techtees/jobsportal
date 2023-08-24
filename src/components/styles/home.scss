@@ -1,21 +1,16 @@
 .home{
-    // padding: 8rem 0;
     background: #EFF6F2;
-    // height: 70vh;
-    // overflow: hidden;
-    // position: relative;
+    overflow: hidden;
+    position: relative;
 
     .container{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // border: 1px solid red;
-        // position: relative;
-        // bottom: 0;
+        position: relative;
     }
 
     .content-sec{
-        // border: 1px solid blue;
         width: 50%;
         h1{
             max-width: 600px;
@@ -36,8 +31,6 @@
                 display: flex;
                 width: 70%;
                 justify-content: space-between;
-                // border: 1px solid red;
-                // width: 100%;
 
                 input {
                     border: none;
@@ -45,6 +38,7 @@
                     width: 78.7%;
                     max-width: 530px;
                     padding: .95em 0em .95em 3em ;
+                    font-size:2rem;
                 }
                  button{
                     outline: none;
@@ -68,17 +62,12 @@
     }
     .hero-img{
         width:50% ;
-        max-width: 550px;
-        // border: 1px solid yellow;
-        // position: relative;
-
-        img{
-            // background-position: bottom;
-            position: relative;
-            bottom: 0;
-            background-size: contain;
-            // border: 1px solid magenta;
-        }
+        max-width: 420px;
+        position: absolute;
+        bottom:-5px;
+        overflow: hidden;
+        left:50%;
+        transform: translateX(50%);
     }
 
     
