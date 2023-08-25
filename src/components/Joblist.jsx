@@ -1,6 +1,7 @@
 
 import './styles/job-list.scss'
 import Button from '../shared/Button';
+import {HiOutlineLocationMarker, HiOutlineArrowsExpand} from 'react-icons/hi'
 import {JobList} from '../backend/data';
 
 function Joblist() {
@@ -19,10 +20,10 @@ function Joblist() {
                                     </div>
                                     <div className='details'>
                                         <span>Match company limited</span>
-                                    <h3>{item.name}</h3>
+                                        <h3>{item.name}</h3>
                                         <div className='other-info'>
-                                            <span><i></i> {item.location}</span>
-                                            <span>{item.type}</span>
+                                            <span> <HiOutlineLocationMarker color='#338573' size={18} /> {item.location}</span>
+                                            <span><HiOutlineArrowsExpand size={15} color='#338573' /> {item.type}</span>
                                             <span>{item.salary}</span>
                                         </div>
                                     </div>
