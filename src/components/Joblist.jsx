@@ -14,10 +14,10 @@ function Joblist() {
                 <div className='job-list'>
                     { JobList.map((item, index)=> (
                             <div className='job-list-items' key={index}>
-                                <div className="res-circle">
-                                    <div className="circle-txt">J</div>
-                                </div>
                                 <div className='job-details'>
+                                    <div className="res-circle">
+                                        <div className="circle-txt">J</div>
+                                    </div>
                                     <div className='details'>
                                         <span>Match company limited</span>
                                         <h3>{item.name}</h3>
@@ -27,8 +27,8 @@ function Joblist() {
                                             <span>{item.salary}</span>
                                         </div>
                                     </div>
-                                    <Button className='btn-primary' type='button' text='View Details' />
                                 </div>
+                                <Button className='btn-primary' type='button' text='View Details' />
                             </div>
                         ))
                     }
