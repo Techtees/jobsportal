@@ -6,69 +6,101 @@
         .view-more-btn {
             margin: 20px auto;
             width: fit-content;
-            // max-width: 100%;
-            // display: flex; 
-            // justify-content: center;
             border: 1px solid red;
 
             .lsn{
                 font-size: 15px;
                 color: #000;
             }
-            
         }
         
-       
         .title{
             text-align: center;
         }
+
         .job-list{
             display: flex;
             flex-direction: column;
             gap: 3em;
+           
         
             .job-list-items{
-                // border: 1px solid red;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
                 border-radius: 10px;
                 padding: 20px;
+                border: 1px solid blue;
+                gap: 1em;
     
+
+                .res-circle{
+                    width: 100px;
+                    border-radius: 50%;
+                    background: #338573;
+                    line-height: 0;
+                    position: relative;
+
+                    .circle-txt{
+                        position: absolute;
+                        bottom: 50%;
+                        width: 100%;
+                        text-align: center;
+                        font-weight: bold;
+                        font-size: 39px;
+                        color: #fff;
+                    }
+                }
+
+                .res-circle:after{
+                    content: "";
+                    display: block;
+                    padding-bottom: 100%;
+                }
+
                 .job-details{
                     display: flex;
                     gap: 0em 5em;
                     align-items: center;
     
-                    .res-circle{
-                        width: 100px;
-                        border-radius: 50%;
-                        background: #338573;
-                        line-height: 0;
-                        position: relative;
-    
-                        .circle-txt{
-                            position: absolute;
-                            bottom: 50%;
-                            width: 100%;
-                            text-align: center;
-                            font-weight: bold;
-                            font-size: 39px;
-                            color: #fff;
+                   
+                    .details{
+                        .other-info {
+                            display: flex;
+                            align-items: center;
+                            
+                            span{
+                                display: flex;
+                                margin: 0 10px 0 0px;
+                                gap: 5px;
+                            }
                         }
-                    }
-    
-                    .res-circle:after{
-                        content: "";
-                        display: block;
-                        padding-bottom: 100%;
-                    }
-    
-                    .job-details{
-                    
+
                     }
                     
+                }
+                .job-btn{
+                    border: 1px solid gold
+                   }
+                   
+
+                @media (max-width:625px)  {
+                     flex-direction: column;
+                     align-items: flex-start;
+
+                     .job-details{
+                        flex-direction: column;
+                        align-items: unset;
+                     }
+                    
+                     .other-info{
+                        align-items: flex-start !important;
+                        margin-bottom: 8px;
+                     }
+                     .job-btn{
+                    
+                    }
                 }
             }
         }
