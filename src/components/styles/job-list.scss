@@ -2,10 +2,11 @@
     width: 100%;
   
     .container{
+        display: flex;
+        flex-direction: column;
         
         .view-more-btn {
             margin: 20px auto;
-            width: fit-content;
             border: 1px solid red;
 
             .lsn{
