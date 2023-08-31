@@ -1,3 +1,5 @@
+
+
 .home{
     background: #EFF6F2;
     overflow: hidden;
@@ -12,24 +14,23 @@
 
     .content-sec{
         width: 50%;
+
         h1{
             max-width: 600px;
             margin-bottom: 1em;
         }
         p {
             max-width: 676px;
-            line-height: 3rem;
         }
-       
-
+        
         form{
             padding: 7em 0;
             .input-group {
                 background-color:  #fff;
                 border-radius: 10px;
-                padding: .5em 0;
+                padding: .2em 0;
                 display: flex;
-                width: 70%;
+                width: 100%;
                 justify-content: space-between;
 
                 input {
@@ -37,38 +38,76 @@
                     outline: none;
                     width: 78.7%;
                     max-width: 530px;
-                    padding: .95em 0em .95em 3em ;
-                    font-size:2rem;
+                    padding: .90em 0em .90em 3em ;
+                    font-size:var(--fs-md);
                 }
                  button{
                     outline: none;
                     border: none;
                     color: #fff;
                     background-color:#338573;
-                    font-size: 2.4rem;
+                    font-size: var(--fs-md);
                     padding: .55em 1em;
                     border-radius: 10px;
-                    max-width: 200px;
+                    // max-width: 200px;
 
                     
                  }
                  ::placeholder {
                     color: #AEB0B4;
                     font-weight: 700;
-                    font-size: 1.8rem;
+                    font-size: var(--fs-md);
                  }
+
+                 @media (max-width: 350px) {
+                    
+                    background-color: unset;
+                    display: block;
+                    margin: 0px auto;
+                    // border: 1px solid blue;
+                    input{
+                        width: 100%;
+                        margin-bottom: 10px;
+                    }
+                    
+                    button{
+                        width:100%;
+                        max-width:unset;
+                        padding: 1em 0em;
+                        
+                    }
+                }
+                
             }
+
+            
         }
     }
+    
     .hero-img{
         width:50% ;
         max-width: 420px;
         position: absolute;
         bottom:-5px;
-        overflow: hidden;
-        left:50%;
-        transform: translateX(50%);
+        // overflow: hidden;
+        left:60%;
+        // transform: translateX(40%);
+        
+        
     }
-
+   
+    
+    @media (max-width: 560px ){
+        .hero-img{
+          display: none;
+        }
+        .content-sec{
+          width: 100%;
+         form{
+            padding: 4em 0;
+         }
+        }
+      }
     
 }
+
