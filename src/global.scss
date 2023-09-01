@@ -17,7 +17,7 @@
 
 @media (max-width: 800px)  {
  :root{
-  --fs-xsm: 0.5rem;
+  --fs-xsm: 0.95rem;
   --fs-sm: 1.2rem;
   --fs-md: 1.5rem;
   --fs-xl: 2.5rem;
@@ -78,7 +78,8 @@ h3{
   margin: 0;
 }
 
-p {
+
+p , ul li{
   color: #726D6D;
   font-weight: 400;
   font-size: var(--fs-sm);
@@ -116,6 +117,15 @@ p {
   background-color: #ffff;
 }
 
+.btn-info{
+  @extend .btn;
+  color: #000;
+  background-color: #ffff;
+  border: 1px solid #AAA;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+}
+
 .btn-w-b{
     @extend .btn;
     color: #338573;
@@ -124,6 +134,15 @@ p {
 }
 .bg-color {
   background-color:#338573;
+}
+
+.title-heading{
+  background-color: #F4F5F7;
+  padding: 1.2em 0;
+  text-align: center;
+  font-size: var(--fs-xl);
+  font-weight: 500;
+ 
 }
 .footer-bg{
  @extend .bg-color;

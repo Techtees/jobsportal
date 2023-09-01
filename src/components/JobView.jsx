@@ -8,7 +8,7 @@ function JobView () {
 
     return(
         <div className="jobsviewpage">
-            <Title className="title">
+            <Title>
                 Laravel Developer<span> (Full Time) </span>
                 Match Company Limited
             </Title>
@@ -18,14 +18,14 @@ function JobView () {
                     <Button type='button' className='btn btn-primary' text='Apply This Job' />
                 </div>
                 <div className="job-details">
-                    <Title className='headings'>
+                    <div className='headings'>
                         <span className="qualification">Minimum Qualification: <span>Bachelor</span></span>
                         <span className="qualification">Experience Level: <span>Mid Level</span></span>
                         <span className="qualification">Experience Length: <span>2 years </span></span>
                         <span className="qualification">Location: <span>San Francisco, USA  </span></span>
                         <span className="qualification">Application Deadline<span> 12/08/2022</span></span>
                         <span className="qualification">Salary Range:<span>$ 105,000 - 150,000</span></span>
-                    </Title>
+                    </div>
                     <h3>Job Description</h3>
                     <p>We are searching for a Laravel developer to build web applications for our company. In this role, you will design and create projects using Laravel framework and PHP, and assist the team in delivering high-quality web applications, services, and tools for our business. <span>To ensure success as a Laravel developer you should be adept at utilizing Laravel's GUI and be able to design a PHP application from start to finish. A top-notch Laravel developer will be able to leverage their expertise and experience of the framework to independently produce complete solutions in a short turnaround time.</span></p>
 

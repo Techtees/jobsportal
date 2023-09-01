@@ -1,15 +1,8 @@
 .jobsviewpage{
     // border: 1px solid blue;
     
-    .title{
-        background-color: #F4F5F7;
-        padding: 1.2em 0;
-        text-align: center;
-        font-size: var(--fs-xl);
-        font-weight: 500;
-        span{
-            font-size: var(--fs-xsm);
-        }
+    .title-heading > span{
+        font-size: var(--fs-xsm);
     }
     .btn-group {
         display: flex;
