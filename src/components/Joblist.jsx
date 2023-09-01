@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom'
 import './styles/job-list.scss'
 import Button from '../shared/Button';
 import {HiOutlineLocationMarker, HiOutlineArrowsExpand} from 'react-icons/hi'
@@ -28,7 +28,7 @@ function Joblist() {
                                         </div>
                                     </div>
                                 </div>
-                                <Button className='btn-primary' type='button' text='View Details' />
+                                <Link className='btn btn-primary' to='/viewjob' >View Details</Link>
                             </div>
                         ))
                     }
