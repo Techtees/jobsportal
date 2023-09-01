@@ -1,6 +1,6 @@
 function Title ({className, children}) {
     return(
-        <div className={className}>
+        <div className='title-heading'>
             {children}
         </div>
     )
