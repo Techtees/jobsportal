@@ -1,0 +1,10 @@
+.table-box {
+    border: 1px solid #d6d0d0;
+    overflow: auto  ;
+    border-radius: 10px;
+
+    .actions >*{
+        margin-right: 0.9em;
+        font-size: var(--fs-sm);
+    }
+}

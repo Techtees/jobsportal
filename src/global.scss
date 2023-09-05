@@ -89,6 +89,33 @@ p , ul li{
 //   font-size: 1.3rem;
 // }
 
+table {
+  width: 100%;
+  // max-width: 900px;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+th, td {
+  // width: 25%;
+  text-align: left;
+  padding: 3rem;
+}
+
+th {
+  font-size: var(--fs-md);
+  border-bottom: 1px solid #353030;
+}
+td {
+  font-size: var(--fs-sm);
+}
+
+tr {
+  border-bottom: 1px solid #d6d0d0;
+  border-radius: 10px;
+  
+}
+
 .container{
   width: 90%;
   max-width: 1512px;
