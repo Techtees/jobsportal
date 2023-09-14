@@ -10,8 +10,12 @@ function Header() {
                 <span className="logo">Jobstal</span>
             </Link>
             <div className="menu-right">
-                <Button  type='button' className='btn-w-b' text='Login' />
-                <Button  type='button' className='btn-primary' text='Post a job' />
+                <Link to='/login'>
+                     <Button  type='button' className='btn-w-b' text='Login' />
+                </Link>
+                <Link to='/create-job'>
+                    <Button  type='button' className='btn-primary' text='Post a job' />
+                </Link>
             </div>
         </header>
     )
