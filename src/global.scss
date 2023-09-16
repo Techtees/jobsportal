@@ -32,6 +32,7 @@
 
 html {
     font-size: 62.5%;
+    min-height: 100%;
 }
 
 * {
@@ -42,7 +43,10 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
+  position: relative;
+  // height: 100%;
 }
+
 
 ul {
  list-style: none;
@@ -121,7 +125,6 @@ tr {
   max-width: 1512px;
    margin: 0 auto;
    padding: 2em 0;
-   position: relative;
 }
 
 label{
@@ -161,8 +164,8 @@ textarea {
 .btn {
   padding: .85em 2em;
   border: none;
-  border-radius: 5px;
-  font-size: 1.5rem;
+  border-radius: 10px;
+  font-size: var(--fs-md);
   font-weight: 600;
   cursor: pointer;
 }
@@ -206,8 +209,16 @@ textarea {
   font-weight: 500;
  
 }
+main{
+  flex-grow: 1;
+}
 .footer-bg{
  @extend .bg-color;
+
+position: relative;
+width: 100%;
+bottom: em;
+// margin-top: 4em;
  p{
   color: #ffff;
   text-align: center;
