@@ -16,18 +16,18 @@ function Login () {
                 <div className="form-login">
                     <form action="">
                         <div className="form-group">
-                            <label htmlFor="">Job Description</label>
+                            <label htmlFor="">Username</label>
                             <input type='text'
                             value={userName}
                             onChange={(e) => setUserName(e.target.value)}
-                            placeholder="Job Description" />
+                            placeholder="Username" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="">Job Description</label>
+                            <label htmlFor="">Password</label>
                             <input type='text'
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
-                            placeholder="Job Description" />
+                            placeholder="Password" />
                         </div>
                         <Button className='btn btn-primary' text='Login' />
                         <div className="not-member">Not a member? <span>Register</span></div>
