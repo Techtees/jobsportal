@@ -1,8 +1,13 @@
 import './styles/home.scss'
 import Banner from '../images/banner.png'
 import Button from '../shared/Button';
+import AppContext from '../backend/api';
+import {useContext} from 'react'
+
 
 function Home() {
+    const {allJob} = useContext(AppContext)
+    console.log(allJob)
     return (
         <div className="home">
             <div className="container">
@@ -12,13 +17,11 @@ function Home() {
                     <form action="">
                         <div className='input-group'>
                             <input type="text" placeholder='Search by job titile.....' />
-                           <button> Search</button>
+                           <Button className='btn-primary' text='Search' />
                         </div>
                     </form>
                 </div>
-                <div className='hero-img'>
-                    <img src={Banner} alt="" className='' />
-                </div>
+                <img src={Banner} alt="" className='hero-img' />
             </div>
         </div>
     )

@@ -2,12 +2,14 @@ import Layout from "../shared/Layout"
 import {Link} from 'react-router-dom'
 import './styles/header.scss'
 import Button from "../shared/Button";
+import Logo from "../images/nendu.png"
 
 function Header() {
     return (
-        <header className="container">
+        <Layout className='header-layout'>
+            <header className="container">
             <Link to='/'>
-                <span className="logo">Jobstal</span>
+                <img src={Logo} alt="Nendu" className="logo" />
             </Link>
             <div className="menu-right">
                 <Link to='/login'>
@@ -18,6 +20,7 @@ function Header() {
                 </Link>
             </div>
         </header>
+        </Layout>
     )
 }
 

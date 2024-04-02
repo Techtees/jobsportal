@@ -5,17 +5,21 @@
     max-width:678px;
     margin: 4em auto;
     @extend .form-box;
-
+    
+    .symb{
+        color: #ff0000;
+    }
     form{
 
         >* {
             margin: 1em 0;
         }
 
+        
         button{
             width: 100%;
         }
-
+        
         .not-member {
             font-size: var(--fs-md);
             text-align: center;
@@ -24,5 +28,15 @@
             }
             
         }
+        input{
+            &::placeholder{
+               &::after{
+                content: "***";
+                color: #ff0000;
+               }
+            }
+        }
     }
+    
+        
 }

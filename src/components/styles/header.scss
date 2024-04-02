@@ -1,16 +1,19 @@
+.header-layout{
+   // background:#EFF6F2;
+   z-index: 1;
+}
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 0;
+    padding: 3em 0;
 
     @media (max-width:475px) {
         padding: 1em 0;
       }
 
     .logo{
-        font-size: 3.6rem;
-        color: #338573;
+        width: 160px;
     }
     .menu-right{
        display: flex;

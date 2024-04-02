@@ -24,7 +24,7 @@ function Login () {
                         </div>
                         <div className="form-group">
                             <label htmlFor="">Password</label>
-                            <input type='text'
+                            <input type='password'
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
                             placeholder="Password" />

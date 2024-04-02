@@ -124,7 +124,7 @@ tr {
   width: 90%;
   max-width: 1512px;
    margin: 0 auto;
-   padding: 2em 0;
+   padding: 3em 0;
 }
 
 label{
@@ -135,7 +135,7 @@ label{
   margin: 0.8em 0;
 }
 
-input[type='text'], 
+input,input[type='text'], 
 select,
 input[type='date'],
 textarea
@@ -143,9 +143,10 @@ textarea
   border-radius: 10px;
   border: 1px solid #d6d6d6;
   background: #fff;
-  color: #AEB0B4;
+  color: #3a3a3d;
   font-size: var(--fs-md);
   font-family: Inter;
+  font-weight: 500;
   padding: .9em 0em .5em 1.3em;
   width: 100%;
   
@@ -153,8 +154,13 @@ textarea
     border: 1px solid #338573;
     outline: none;
   }
-  :placeholder{
-    font-size: var(--fs-sm);
+  &::placeholder{
+    font-size: var(--fs-md);
+
+    &::after{
+      content: "***";
+      color: #ff0000;
+     }
   }
   
 }
@@ -162,7 +168,7 @@ textarea {
   min-height: 200px;
 }
 .btn {
-  padding: .85em 2em;
+  padding: .85em 2.5em;
   border: none;
   border-radius: 10px;
   font-size: var(--fs-md);
