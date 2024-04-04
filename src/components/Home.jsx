@@ -7,7 +7,6 @@ import {useContext} from 'react'
 
 function Home() {
     const {allJob} = useContext(AppContext)
-    console.log(allJob)
     return (
         <div className="home">
             <div className="container">
