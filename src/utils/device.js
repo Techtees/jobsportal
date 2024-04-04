@@ -7,6 +7,8 @@ export const size = {
     xl: '1440px',
     xxl: '2560px',
 };
+
+
 export const device = {
     xs: `(min-width: ${size.xs})`,
     sm: `(min-width: ${size.sm})`,
