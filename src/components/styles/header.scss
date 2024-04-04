@@ -6,23 +6,24 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3em 0;
+    padding: 2em 0;
 
     @media (max-width:475px) {
         padding: 1em 0;
       }
 
     .logo{
-        width: 160px;
+        width: 130px;
+        min-height: 45px;
     }
     .menu-right{
        display: flex;
     //    width: fit-content;
-       justify-content: space-between;
+      //  justify-content: space-between;
     //    border: 1px solid red;
 
        Button:last-of-type{
-        margin-left: 4.2rem;
+      //   margin-left: 2.2rem;
        }
 
        @media (max-width:475px) {
