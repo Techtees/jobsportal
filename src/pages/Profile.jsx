@@ -10,9 +10,17 @@ import {toast} from 'react-toastify'
 import AuthContext from "../context/Auth/userAuthenticationcontext";
 
 function Profile () {
-  const {authStore}  = useContext(AuthContext);
+  const {authStore, logout}  = useContext(AuthContext);
   const {username, name, email} = authStore
-    const Navigate = useNavigate()
+  const navigate = useNavigate()
+     console.log(authStore)
+  const handleLogout = () => {
+    logout()
+    navigate('/login')
+    console.log("log out")
+  }
+
+    
 
 
       
@@ -26,6 +34,7 @@ function Profile () {
                     <p>UserName: {username}</p>
                     <p>Name: {name}</p>
                     <p>Email: {email}</p>
+                    <Button onClick={handleLogout} className='btn' text='Logout'/>
                 </div>
             </div>
         </div>
