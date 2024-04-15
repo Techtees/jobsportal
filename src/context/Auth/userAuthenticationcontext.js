@@ -5,6 +5,7 @@ const AuthContext = createContext();
 
 
 export const AuthProvider = ({children}) => {
+    const [userState, setUserState] = useState(null)
     
     const [loading, setLoading] = useState(false)
     const [registerUser, setRegisterUser] = useState({})
@@ -14,16 +15,15 @@ export const AuthProvider = ({children}) => {
     const [success, setSuccess] = useState(false)
 
     // Local storage
-    const userDataString = localStorage.getItem('login')
-    const authStore = JSON.parse(userDataString) 
+    const userDataString = localStorage.getItem('user')
+    const authStore = JSON.parse(userDataString)
+    // const f1 = authStore
+    
+    
     const authDataFormat = {
-     authStore: authStore ? authStore : null
+     userState: userState ? userState : null
     }
 
-    
-    useEffect(() => {
-        // createUser()
-    }, [])
     
      const register = async (userData) => {
         try {
@@ -71,7 +71,7 @@ export const AuthProvider = ({children}) => {
     
             if (data) {
                 setSuccess(true)
-                localStorage.setItem('login', JSON.stringify(data));
+                localStorage.setItem('user', JSON.stringify(data));
 
             }
             setLoginUser(data);
@@ -81,6 +81,12 @@ export const AuthProvider = ({children}) => {
             setError(error)    
         } 
     };
+
+    const logout = () => {
+        localStorage.removeItem('user');
+        setUserState(null)
+    }
+    
     
     
     return <AuthContext.Provider value={{
@@ -92,7 +98,9 @@ export const AuthProvider = ({children}) => {
         message,
         error, success,
         authStore,
-        authDataFormat
+        authDataFormat,
+        logout
+
         }}>
         {children}
     </AuthContext.Provider>
